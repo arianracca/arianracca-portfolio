@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* FOCUS STYLE FOR ALL THE PAGE */
+*:focus {
+  outline: none !important; /* Hide the standard browser focus */
+  box-shadow: 0 0 5px 3px var(--color-white) !important; /* Custom focus style */
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--color-white) !important;
+  font-family: var(--typography) !important;
+  font-size: 12px;
+}
+
+body {
+  font-family: var(--typography) !important;
+  background-color: var(--color-dark);
+  background-image: linear-gradient(180deg, var(--color-dark) 70%, var(--color-highlight) 150%);
+}
+
+h1 {
+  font-family: var(--typography) !important;
+  color: var(--color-white) !important;
+  font-size: 5rem !important;
+  line-height: 0.9 !important;
+  text-shadow: 1px 1px 60px var(--color-dark);
+  padding: 1rem;
+}
+
+h2 {
+  font-family: var(--typography) !important;
+  font-size: 3rem !important;
+  color: var(--color-white) !important;
+}
+
+h3 {
+  font-family: var(--typography) !important;
+  font-size: 2.4rem !important;
+  color: var(--color-white) !important;
+}
+
+h4 {
+  font-family: var(--typography) !important;
+  font-size: 2rem !important;
+  color: var(--color-white) !important;
+}
+
+p {
+  /* Change using website font */
+  font-family: var(--typography) !important;
+  font-size: 1.5rem ;
+  color: var(--color-white) !important;
+
+}
+
+.subtitle {
+  color: var(--color-white) !important;
+  font-size: 2.6rem;
+  font-weight: 350;
+  text-shadow: 1px 1px 60px var(--color-white);
+}
+
+a {
+  border-radius: 8px;
+  text-decoration: none !important;
+  color: var(--color-white) !important;
+  transition: all 1s ease-out;
+}
+
+a:hover {
+  color: var(--color-secondary) !important;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px !important;
+  border: none !important;
+  color: var(--color-white);
+  background: var(--color-primary);
+  background-image: linear-gradient(180deg, var(--color-primary) 50%, var(--color-secondary) 200%);
+  box-shadow: 1px 1px 60px var(--color-gray);
+  font-size: 1.5rem !important;
+  border-radius: 10px !important;
+  transition: all 0.8s ease-in-out !important;
+
+  @media (max-width: 992px){
+    margin: 1.5rem;
+  }
+}
+
+button:hover {
+  background: var(--color-secondary);
+  background-image: linear-gradient(180deg, var(--color-secondary) 10%, var(--color-primary) 100%);
+  box-shadow: 2px 2px 80px var(--color-secondary);
+  color: var(--color-dark);        
+}
+
+/* ---------------------------------------------- */
+/* FOOTER SECTION */
+footer {
+  margin-top: 120px;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: var(--color-primary);
+  background-image: linear-gradient(180deg, var(--color-primary) 35%, var(--color-secondary) 150%);
+  /* Glow shadow for footer (optional) */
+  /* box-shadow: 1px 1px 60px var(--color-gray); */
+}
+
+footer>ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0 !important;
+}
+
+footer>ul>li {
+  padding: 0 10px;
+}
+
+footer>ul>li>a {
+  color: var(--color-primary);
+}
+
+footer>ul>li>a:hover {
+  background: none;
+}
+
+footer>span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  color: var(--color-white);
+}
