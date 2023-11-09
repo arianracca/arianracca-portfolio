@@ -9,13 +9,21 @@ COPY package.json ./app/
 COPY package-lock.json ./app/
 
 # Instalar las dependencias del proyecto
+RUN ls
+RUN echo "DIRECTORIO PREVIO A NPM INSTALL"
+
+RUN pwd
 RUN cd ./app/ npm install
 
 # Copiar el resto de los archivos del proyecto al contenedor
+RUN echo "DIRECTORIO PREVIO A COPIAR"
+RUN pwd
 COPY ./ ./app/
 
 #RUN CI=true npm test
-RUN  npm run build
+RUN echo "DIRECTORIO PREVIO A NPM BUILD"
+RUN pwd
+RUN cd ./app/ npm run build
 
 # HTTPS=true  && --ssl-cert ".crt" --ssl-key ".crt.key"
 #serve -s build --listen 8580 --ssl-cert ".crt" --ssl-key ".crt.key"
