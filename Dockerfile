@@ -5,7 +5,8 @@ FROM node:18 as build-stage
 WORKDIR /app
 
 # Copiar el archivo package.json y package-lock.json (si está disponible)
-COPY package*.json ./app/
+COPY package.json ./app/
+COPY package-lock.json ./app/
 
 # Instalar las dependencias del proyecto
 RUN npm install
