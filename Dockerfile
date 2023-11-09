@@ -9,7 +9,7 @@ COPY package.json ./app/
 COPY package-lock.json ./app/
 
 # Instalar las dependencias del proyecto
-RUN npm install
+RUN cd ./app/ npm install
 
 # Copiar el resto de los archivos del proyecto al contenedor
 COPY ./ ./app/
