@@ -17,9 +17,8 @@ const sections = [
 
 const PostDetail: React.FC<PostDetailProps> = ({ posts }) => {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
-  const { postId } = useParams<{ postId: string }>();
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-  const index = parseInt(postId);
+  const { postId } = useParams<{ postId?: string }>();
+  const index = postId ? parseInt(postId) : -1;
 
   if (isNaN(index) || index < 0 || index >= posts.length) {
     // Handle if the index is not valid
