@@ -37,7 +37,7 @@ export interface Project {
 
 //GENERAL DATA --------------------------------------
 export const generalData = {
-  logo: "src/assets/general/logo-wh.png", // Logo path
+  logo: "../../assets/general/logo-wh.png", // Logo path
   pageTitle: "Arian Racca | Portfolio", // Website Title
   footerSignature: "Arian Racca 2023",
   // Linked Font
@@ -62,12 +62,12 @@ export const welcomeData = {
   nameTitle: "Arian Racca",
   upSubtitle: "Hello, my name is",
   downSubtitle: "This is my Profile",
-  bgImage: "src/assets/welcome/bg-eye.webp",
+  bgImage: "../../assets/welcome/bg-eye.webp",
 };
 
 //ABOUT SECTION DATA -----------------------------------------
 export const aboutMe: AboutMe = {
-  imgProfile: "src/assets/about/my-photo.webp",
+  imgProfile: "../../assets/about/my-photo.webp",
   name: "Hello! I'm Arian",
   role: "Fullstack Software Developer",
   mainStack: "React & Java Spring Boot",
@@ -123,55 +123,55 @@ export const stackCardsData: StackCardData[] = [
         name: "HTML5",
         description: "HTML5 Certificates.",
         certificateUrls: [
-          "src/assets/about/certificates/web-responsive-freecodecamp.jpg",
+          "../../assets/about/certificates/web-responsive-freecodecamp.jpg",
         ],
       },
       {
         name: "css3",
         description: "Css3 Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/web-responsive-freecodecamp.jpg",
+          "../../assets/about/certificates/web-responsive-freecodecamp.jpg",
         ],
       },
       {
         name: "javascript",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/javascript-basics-to-advance.jpg",
+          "../../assets/about/certificates/javascript-basics-to-advance.jpg",
         ],
       },
       {
         name: "typescript",
         description: "HTML5 Certificates Description",
-        certificateUrls: ["src/assets/about/certificates/react-udemy.jpg"],
+        certificateUrls: ["../../assets/about/certificates/react-udemy.jpg"],
       },
       {
         name: "react",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/react-neoris.jpg",
-          "src/assets/about/certificates/react-udemy.jpg",
+          "../../assets/about/certificates/react-neoris.jpg",
+          "../../assets/about/certificates/react-udemy.jpg",
         ],
       },
       {
         name: "angular",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/labs-fullstack-neoris.jpg",
+          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
         ],
       },
       {
         name: "bootstrap",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/labs-fullstack-neoris.jpg",
+          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
         ],
       },
       {
         name: "material ui",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/labs-fullstack-neoris.jpg",
+          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
         ],
       },
       {
@@ -189,18 +189,18 @@ export const stackCardsData: StackCardData[] = [
         name: "java",
         description: "Java Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/labs-fullstack-neoris.jpg",
-          "src/assets/about/certificates/rest-api-udemy.jpg",
-          "src/assets/about/certificates/patrones-de-diseño-neoris-panella.jpg",
+          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
+          "../../assets/about/certificates/rest-api-udemy.jpg",
+          "../../assets/about/certificates/patrones-de-diseño-neoris-panella.jpg",
         ],
       },
       {
         name: "springboot",
         description: "Java Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/labs-fullstack-neoris.jpg",
-          "src/assets/about/certificates/rest-api-udemy.jpg",
-          "src/assets/about/certificates/patrones-de-diseño-neoris-panella.jpg",
+          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
+          "../../assets/about/certificates/rest-api-udemy.jpg",
+          "../../assets/about/certificates/patrones-de-diseño-neoris-panella.jpg",
         ],
       },
       {
@@ -218,8 +218,8 @@ export const stackCardsData: StackCardData[] = [
         name: "git",
         description: "Java Certificates Description",
         certificateUrls: [
-          "src/assets/about/certificates/git-neoris.jpg",
-          "src/assets/about/certificates/git2-neoris.jpg",
+          "../../assets/about/certificates/git-neoris.jpg",
+          "../../assets/about/certificates/git2-neoris.jpg",
         ],
       },
       {
@@ -230,12 +230,12 @@ export const stackCardsData: StackCardData[] = [
       {
         name: "bitbucket",
         description: "Python Certificates Description",
-        certificateUrls: [""],
+        certificateUrls: [],
       },
       {
         name: "vscode",
         description: "Python Certificates Description",
-        certificateUrls: [""],
+        certificateUrls: [],
       },
       // Add more technologies with their respective descriptions and certificates
     ],
