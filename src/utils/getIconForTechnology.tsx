@@ -11,6 +11,7 @@ import {
   FaBootstrap,
   FaNpm,
   FaGitAlt,
+  FaGithub,
   FaDocker,
   FaUnity,
   FaJenkins,
@@ -555,6 +556,8 @@ const getIconForTechnology = (technology: string) => {
       return <FaNpm />;
     case "git":
       return <FaGitAlt />;
+    case "github":
+      return <FaGithub />;
     case "gitkraken":
     case "git kraken":
       return <SiGitkraken />;

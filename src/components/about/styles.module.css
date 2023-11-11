@@ -200,8 +200,20 @@
   padding: 10px;
 }
 
+.full-certificate-description {
+  max-height: 85%;
+  height: auto;
+  overflow-y: auto;
+}
+
 .certificate-container img {
   max-width: 100%;
+  height: auto;
+  border: 1px solid var(--color-primary)
+}
+
+.no-certificate-container {
+  display: none;
   height: auto;
 }
 
@@ -238,5 +250,19 @@
 }
 
 .certificate-description::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Style scroll-y for full description */
+.full-certificate-description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.full-certificate-description::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+.full-certificate-description::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-secondary);
 }

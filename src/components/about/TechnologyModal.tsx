@@ -37,18 +37,28 @@ const TechnologyModal: React.FC<TechnologyModalProps> = ({
             </button>
           </div>
         </div>
-        <div className={styles["certificate-description"]}>
-          <p>{technology.description}</p>
-        </div>
+        {technology.certificateUrls.length > 0 ? (
+          <div className={styles["certificate-description"]}>
+            <p>{technology.description}</p>
+          </div>
+        ) : (
+          <div className={styles["full-certificate-description"]}>
+            <p>{technology.description}</p>
+          </div>
+        )}
         <div className={styles["certificate-container"]}>
-          {technology.certificateUrls.map((url, index) => (
-            <img
-              loading="lazy"
-              key={index}
-              src={url}
-              alt={`Certificate ${index + 1}`}
-            />
-          ))}
+          {technology.certificateUrls.length > 0 ? (
+            technology.certificateUrls.map((url, index) => (
+              <img
+                loading="lazy"
+                key={index}
+                src={url}
+                alt={`Certificate ${index + 1}`}
+              />
+            ))
+          ) : (
+            <div className={styles["no-certificate-container"]}></div>
+          )}
         </div>
       </div>
     </div>

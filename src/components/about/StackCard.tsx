@@ -19,7 +19,14 @@ const StackCard: React.FC<StackCardProps> = ({ title, technologies }) => {
     useState<Technology | null>(null);
 
   const handleIconClick = (technology: Technology) => {
-    setSelectedTechnology(technology);
+    if (
+      technology.certificateUrls.length > 0 ||
+      technology.description.trim() !== ""
+    ) {
+      setSelectedTechnology(technology);
+    } else {
+      setSelectedTechnology(null);
+    }
   };
 
   const handleCloseModal = () => {
