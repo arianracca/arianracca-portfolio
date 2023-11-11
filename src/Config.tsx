@@ -62,12 +62,15 @@ export const welcomeData = {
   nameTitle: "Arian Racca",
   upSubtitle: "Hello, my name is",
   downSubtitle: "This is my Profile",
-  bgImage: "../../assets/welcome/bg-eye.webp",
+  bgImage: new URL("./assets/welcome/bg-eye.webp", import.meta.url).toString(),
 };
 
 //ABOUT SECTION DATA -----------------------------------------
 export const aboutMe: AboutMe = {
-  imgProfile: "../../assets/about/my-photo.webp",
+  imgProfile: new URL(
+    "./assets/about/my-photo.webp",
+    import.meta.url,
+  ).toString(),
   name: "Hello! I'm Arian",
   role: "Fullstack Software Developer",
   mainStack: "React & Java Spring Boot",
@@ -123,55 +126,84 @@ export const stackCardsData: StackCardData[] = [
         name: "HTML5",
         description: "HTML5 Certificates.",
         certificateUrls: [
-          "../../assets/about/certificates/web-responsive-freecodecamp.jpg",
+          new URL(
+            "./assets/about/certificates/web-responsive-freecodecamp.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "css3",
         description: "Css3 Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/web-responsive-freecodecamp.jpg",
+          new URL(
+            ".assets/about/certificates/web-responsive-freecodecamp.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "javascript",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/javascript-basics-to-advance.jpg",
+          new URL(
+            "./assets/about/certificates/javascript-basics-to-advance.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "typescript",
         description: "HTML5 Certificates Description",
-        certificateUrls: ["../../assets/about/certificates/react-udemy.jpg"],
+        certificateUrls: [
+          new URL(
+            "./assets/about/certificates/react-udemy.jpg",
+            import.meta.url,
+          ).toString(),
+        ],
       },
       {
         name: "react",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/react-neoris.jpg",
-          "../../assets/about/certificates/react-udemy.jpg",
+          new URL(
+            "./assets/about/certificates/react-neoris.jpg",
+            import.meta.url,
+          ).toString(),
+          new URL(
+            "./assets/about/certificates/react-udemy.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "angular",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
+          new URL(
+            "./assets/about/certificates/labs-fullstack-neoris.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "bootstrap",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
+          new URL(
+            "./assets/about/certificates/labs-fullstack-neoris.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "material ui",
         description: "HTML5 Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
+          new URL(
+            "./assets/about/certificates/labs-fullstack-neoris.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
@@ -189,23 +221,41 @@ export const stackCardsData: StackCardData[] = [
         name: "java",
         description: "Java Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
-          "../../assets/about/certificates/rest-api-udemy.jpg",
-          "../../assets/about/certificates/patrones-de-diseño-neoris-panella.jpg",
+          new URL(
+            "./assets/about/certificates/labs-fullstack-neoris.jpg",
+            import.meta.url,
+          ).toString(),
+          new URL(
+            "./assets/about/certificates/rest-api-udemy.jpg",
+            import.meta.url,
+          ).toString(),
+          new URL(
+            "./assets/about/certificates/patrones-de-diseño-neoris-panella.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "springboot",
         description: "Java Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/labs-fullstack-neoris.jpg",
-          "../../assets/about/certificates/rest-api-udemy.jpg",
-          "../../assets/about/certificates/patrones-de-diseño-neoris-panella.jpg",
+          new URL(
+            "./assets/about/certificates/labs-fullstack-neoris.jpg",
+            import.meta.url,
+          ).toString(),
+          new URL(
+            "./assets/about/certificates/rest-api-udemy.jpg",
+            import.meta.url,
+          ).toString(),
+          new URL(
+            "./assets/about/certificates/patrones-de-diseño-neoris-panella.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "python",
-        description: "Python Certificates Description",
+        description: "",
         certificateUrls: [],
       },
       // Add more technologies with their respective descriptions and certificates
@@ -216,25 +266,31 @@ export const stackCardsData: StackCardData[] = [
     technologies: [
       {
         name: "git",
-        description: "Java Certificates Description",
+        description: "GIT Certificates Description",
         certificateUrls: [
-          "../../assets/about/certificates/git-neoris.jpg",
-          "../../assets/about/certificates/git2-neoris.jpg",
+          new URL(
+            "./assets/about/certificates/git-neoris.jpg",
+            import.meta.url,
+          ).toString(),
+          new URL(
+            "./assets/about/certificates/git2-neoris.jpg",
+            import.meta.url,
+          ).toString(),
         ],
       },
       {
         name: "github",
-        description: "Python Certificates Description",
-        certificateUrls: [""],
+        description: "",
+        certificateUrls: [],
       },
       {
         name: "bitbucket",
-        description: "Python Certificates Description",
+        description: "",
         certificateUrls: [],
       },
       {
         name: "vscode",
-        description: "Python Certificates Description",
+        description: "",
         certificateUrls: [],
       },
       // Add more technologies with their respective descriptions and certificates
@@ -299,17 +355,6 @@ export const projects = [
   },
   {
     title: "Project 3",
-    images: [
-      "https://via.placeholder.com/300",
-      "https://via.placeholder.com/300",
-    ],
-    link: "https://via.placeholder.com/300",
-    repository: "https://via.placeholder.com/300",
-    description: "description",
-    technologies: ["React", "HTML5"],
-  },
-  {
-    title: "Project4",
     images: [
       "https://via.placeholder.com/300",
       "https://via.placeholder.com/300",
