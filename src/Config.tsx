@@ -138,7 +138,7 @@ export const stackCardsData: StackCardData[] = [
         description: "Css3 Certificates Description",
         certificateUrls: [
           new URL(
-            ".assets/about/certificates/web-responsive-freecodecamp.jpg",
+            "./assets/about/certificates/web-responsive-freecodecamp.jpg",
             import.meta.url,
           ).toString(),
         ],
