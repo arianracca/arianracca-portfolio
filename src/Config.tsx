@@ -82,8 +82,9 @@ export const aboutMe: AboutMe = {
     technologies.
   </p>
   <p>
-    🔧 My toolkit includes Angular, TypeScript, Python, Git, and
-    MySQL, enabling me to take on a wide range of exciting
+    🔧 My toolkit includes React, Angular, Javascript, TypeScript,
+    Java, Spring Boot, Python, Git, and MySQL,
+    enabling me to take on a wide range of exciting
     challenges in web development. Whether building responsive
     frontends or robust backends, I'm ready for the task!
   </p>
@@ -258,6 +259,11 @@ export const stackCardsData: StackCardData[] = [
         description: "",
         certificateUrls: [],
       },
+      {
+        name: "database",
+        description: "",
+        certificateUrls: [],
+      },
       // Add more technologies with their respective descriptions and certificates
     ],
   },
@@ -292,6 +298,25 @@ export const stackCardsData: StackCardData[] = [
         name: "vscode",
         description: "",
         certificateUrls: [],
+      },
+      {
+        name: "intellij",
+        description: "",
+        certificateUrls: [],
+      },
+      {
+        name: "jira",
+        description: "Jira and Agile methodologies",
+        certificateUrls: [
+          new URL(
+            "./assets/about/certificates/scrum-fundamentals-certified.jpg",
+            import.meta.url,
+          ).toString(),
+          new URL(
+            "./assets/about/certificates/agile-training.jpg",
+            import.meta.url,
+          ).toString(),
+        ],
       },
       // Add more technologies with their respective descriptions and certificates
     ],
