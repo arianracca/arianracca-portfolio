@@ -31,7 +31,7 @@
   }
 
   .welcome-subtitle {
-    color: var(--color-dark) !important;
+    color: var(--color-highlight) !important;
     text-shadow: 1px 1px 30px var(--color-white) !important;
     font-size: 2rem !important;
   }
