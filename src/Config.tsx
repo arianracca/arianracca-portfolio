@@ -45,12 +45,12 @@ export const generalData = {
     fontLink:
       "https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap",
     fontFamily: "'Rajdhani', sans-serif",
-  },
+  }, 
   colors: {
     colorDark: "#0b0707",
     colorPrimary: "#2f492d",
     colorSecondary: "#8aba85",
-    colorHighlight: "#29223a",
+    colorHighlight: "#bda4d9",
     transparent: "#5e546780",
     colorGray: "#495A59",
     colorWhite: "#e4e4e4",
