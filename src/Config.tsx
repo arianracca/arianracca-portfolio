@@ -50,7 +50,7 @@ export const generalData = {
     colorDark: "#0b0707",
     colorPrimary: "#2f492d",
     colorSecondary: "#8aba85",
-    colorHighlight: "#bda4d9",
+    colorHighlight: "#fffffff8",
     transparent: "#5e546780",
     colorGray: "#495A59",
     colorWhite: "#e4e4e4",
