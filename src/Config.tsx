@@ -295,11 +295,6 @@ export const stackCardsData: StackCardData[] = [
         certificateUrls: [],
       },
       {
-        name: "vscode",
-        description: "",
-        certificateUrls: [],
-      },
-      {
         name: "intellij",
         description: "",
         certificateUrls: [],
